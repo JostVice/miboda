@@ -29,6 +29,11 @@ header {
     height: auto;
 }
 
+.empty-space {
+    height: 0;
+    margin: 2em 0; /* 1em = altura de la fuente */
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 6vw, 4.5rem); /* Responsive typography */
@@ -170,13 +175,9 @@ li .emoji {
 /* Custom link styles */
 a {
   position: relative;
-  color: #FFAB60;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-a:visited {
-  color: #E0A04B;
 }
 
 a::after {
