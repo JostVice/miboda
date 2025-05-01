@@ -225,3 +225,41 @@ a:focus {
     z-index: 1000;   /* asegúrate de que esté por encima del contenido */
     vertical-align: middle;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #FFAB60 !important;
+    color: #fffad9 !important;
+  }
+
+  header {
+    background: url('header-image.jpg') no-repeat center center/cover !important;
+  }
+
+  section {
+    background-color: #fec38a !important;
+    color: #fffad9 !important;
+  }
+
+  h1, h2, p, li {
+    color: #fffad9 !important;
+  }
+
+  a {
+    color: white !important;
+  }
+
+  .rsvp-button {
+    background-color: #00788C !important;
+    color: white !important;
+  }
+
+  .rsvp-button:hover {
+    background-color: #1999A9 !important;
+  }
+
+  #menu {
+    background-color: rgba(51, 51, 51, 0.75) !important;
+    color: #fffad9 !important;
+  }
+}
