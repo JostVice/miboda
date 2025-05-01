@@ -40,7 +40,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 1px;
 
-    color: fffad9; /* Texto blanco sólido */
+    color: #fffad9; /* Texto blanco sólido */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Sombra suave para contraste */
 
     position: absolute;
@@ -224,5 +224,4 @@ a:focus {
     left: 2vh;      /* cerca del borde derecho */
     z-index: 1000;   /* asegúrate de que esté por encima del contenido */
     vertical-align: middle;
-}
 }
