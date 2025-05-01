@@ -228,7 +228,7 @@ a:focus {
 
 .lang-switcher {
     position: fixed;
-    top: 2vh;        /* misma altura que la hamburguesa */
+    top: 1vh;        /* misma altura que la hamburguesa */
     right: 2vh;      /* cerca del borde derecho */
     z-index: 1000;   /* asegúrate de que esté por encima del contenido */
     vertical-align: middle;
