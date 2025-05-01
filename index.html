@@ -6,7 +6,7 @@
 	<meta name="robots" content="noindex, nofollow">
     <title>Guia de Sevilla</title>
     <link rel="stylesheet" href="styles.css?version=2">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -24,11 +24,14 @@
 				<span></span>
 				<span></span>
 		</label>
+		<!-- RSVP Button in header -->
+		<a href="rsvp.html" class="rsvp-button rsvp-in-header">RSVP</a>
 		<!-- The menu that should toggle on click -->
 		<div id="menu">
 			<ul>
 				<li><a href="#section1">Bienvenida</a></li>
 				<li><a href="#section2">Fecha y Lugar</a></li>
+				<li><a href="rsvp.html">Confirmar asistencia</a></li>
 				<li><a href="#section3">Transporte</a></li>
 				<li><a href="#section4">Hoteles Recomendados</a></li>
 				<li><a href="#section5">Imprescindibles en Sevilla</a></li>
@@ -44,7 +47,8 @@
     <!-- Sections -->
     <section id="section1">
         <h2>🌟 Nota de Bienvenida 🌞</h2>
-        <p>¡Bienvenidos a la Sevilla de septiembre, donde el verano se despide con noches templadas y días llenos de luz! Estamos emocionados de compartir con ustedes nuestra alegría en esta ciudad que enamora con sus patios floridos y atardeceres dorados. 🌇</p>
+        <p>¡Bienvenidos a Sevilla en septiembre!
+Aquí, el verano se despide despacito, entre días de luz radiante y noches suaves que invitan a pasear. Estamos felices de compartir con ustedes este momento tan especial en una ciudad que conquista con sus patios llenos de flores, su cielo dorado al atardecer y ese duende que solo Sevilla sabe tener. 🌇</p>
     </section>
 
     <section id="section2">
@@ -52,21 +56,35 @@
         <ul>
             <li><span class="emoji">💒</span> <strong>Ceremonia:</strong><br>
                 12:00 h - 13:00 h<br>
-                <em>Iglesia de San Sebastian, Sevilla</em> (Calle San Salvador, 1) <a href="https://maps.app.goo.gl/VKtkpZ27JMZus1kQ8" target="_blank" rel="noopener">🗺️</a>
+                <em>Iglesia de San Sebastian, Sevilla</em> (Calle San Salvador, 1) <a href="https://maps.app.goo.gl/VKtkpZ27JMZus1kQ8" target="_blank" rel="noopener">🗺️
+				<div class="empty-space"></div> <!-- Línea vacía -->
+				<img src="iglesia.jpg" alt="Iglesia" style="max-width: 50%; 50%: auto; border-radius: 1em; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></a>
             </li>
 			<div class="empty-space"></div> <!-- Línea vacía -->
             <li><span class="emoji">🎉</span> <strong>Celebracion:</strong><br>
                 16:00 h - 24:00 h<br>
-                <em>Hacienda los Miradores</em> <a href="https://maps.app.goo.gl/Ryi91n283BiigjoL8" target="_blank" rel="noopener">🗺️</a> <br>
+                <em>Hacienda los Miradores</em> <a href="https://maps.app.goo.gl/Ryi91n283BiigjoL8" target="_blank" rel="noopener">🗺️
+			<div class="empty-space"></div> <!-- Línea vacía -->
+			<img src="celebracion.jpg" alt="Hacienda" style="max-width: 50%; 50%: auto; border-radius: 1em; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></a> <br>
 				<span class="emoji">🅿️</span> Parking disponible. <br>
             </li>
 			<li><span class="emoji">🚐</span> <strong>Lanzadera boda:</strong> Disponible para el trayecto desde la iglesia hasta la celebracion, y vuelta hasta Sevilla, mas detalles proximamente!
+
+			</li>
 			<div class="empty-space"></div> <!-- Línea vacía -->
             <li><span class="emoji">👗</span> <strong>Vestimenta:</strong><br>
                 Formal · Zapatos cómodos para jardines
             </li>
         </ul>
     </section>
+
+	<section id="section-rsvp">
+		<h2>📨 ¿Nos acompañarás?</h2>
+		<p>
+		Por favor confirma tu asistencia y responde al formulario.</p>
+		<div class="empty-space"></div> <!-- Línea vacía -->
+		<a href="rsvp.html" class="rsvp-button">Confirmar asistencia</a>
+	</section>
 
     <section id="section3">
         <h2>🚖 Transporte</h2>
@@ -86,7 +104,7 @@
     <section id="section4">
         <h2>🏨 Hoteles Recomendados</h2>
         <ul>
-            <strong>En el siguiente mapa podras ver la zona recomendada para hoteles, junto con algunos lugares de interes:</strong></li><br>
+            <li>En el siguiente mapa podras ver la zona recomendada para hoteles en <strong>Amarillo</strong>, con lo que se conoce como el Centro de Sevilla en <strong>Verde</strong>, junto con algunos lugares de interes:</li><br>
 			<br>
 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JQHb0aJ6UpU_ex23Xc8X5xByTa10Ecs&ehbc=2E312F&noprof=1" width=95% height="480"></iframe>
 
@@ -141,16 +159,34 @@
 
     </section>
 	
-    <section id="section6">
-        <h2>🥘 Restaurantes</h2>
-        <p>A rellenar</p>
-    </section>
+<section id="section6">
+	<h2>🍽️ Comer y Beber en Sevilla</h2>
+
+	<h3>🍻 Bares con arte</h3>
+	<ul>
+		<li><span class="emoji">🏺</span> El Rinconcillo - El bar más antiguo de Sevilla. Tapas clásicas y mucha solera <a href="https://maps.app.goo.gl/iux8E4vffrs9yAwA6" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">🍷</span> Bodega Santa Cruz (Las Columnas) - Un clásico para tomar una cervecita con montadito de pringá <a href="https://maps.app.goo.gl/nFSzfpGihLwqtsSN6" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">⛪</span> Plaza del Salvador - Ambiente local y animado para tomar algo al sol <a href="https://maps.app.goo.gl/NzfpGV43D3byZ5sv5" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">🍷</span> Taberna Manolo Cateca - Un tesoro escondido para vinos y vermuts en el centro <a href="https://maps.app.goo.gl/qXAjUQp7U4rT8p1F7" target="_blank" rel="noopener">🗺️</a></li>
+	</ul>
+
+	<h3>🍴 Tapas imprescindibles</h3>
+	<ul>
+		<li><span class="emoji">🌿</span> Perejil - Cocina andaluza con toques modernos, ambiente acogedor y platos con mucho sabor <a href="https://maps.app.goo.gl/EGmTKh1vhTH3WKB96" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">🍷</span> Casa Morales - Taberna tradicional con jamones colgando, vinos de barril y tapas clásicas <a href="https://maps.app.goo.gl/BTvE7HpJxCkkEkko6" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">🐟</span> El Modesto - Famoso por su pescado y marisco fresco, ideal para comer en familia <a href="https://maps.app.goo.gl/LebUf4r7arcn1vMN9" target="_blank" rel="noopener">🗺️</a></li>
+		<li><span class="emoji">🥪</span> Antonio Romero - Taberna popular, no te vayas sin pedir un "piripi" <a href="https://maps.app.goo.gl/L7wXpM27U4ubftM17" target="_blank" rel="noopener">🗺️</a></li>
+	</ul>
+</section>
 
     <section id="section7">
         <h2>🚨 Contactos Importantes</h2>
         <ul>
             <li><span class="emoji">🏥</span> <strong>Urgencias:</strong> 112</li>
             <li><span class="emoji">💊</span> <strong>Farmacia 24h:</strong> Calle Amador De Los Rios, 31 <a href="https://maps.app.goo.gl/ZgZHJ9QsTEwF8u6Z6" target="_blank" rel="noopener">🗺️</a> </li>
+			<li><span class="emoji">ℹ️</span> <strong>Oficina de Turismo:</strong> Plaza del Triunfo, 1 <a href="https://maps.app.goo.gl/nG1tHwcQ8rGpVpR38" target="_blank" rel="noopener">🗺️</a></li>
+        <li><span class="emoji">🏨</span> <strong>Hospital Virgen del Rocío:</strong> Av. Manuel Siurot, s/n <a href="https://maps.app.goo.gl/t9CfDTWyifeQ5W3YA" target="_blank" rel="noopener">🗺️</a></li>
+        <li><span class="emoji">🏨</span> <strong>Hospital Virgen Macarena:</strong> Av. Dr. Fedriani, s/n <a href="https://maps.app.goo.gl/8Q988D6nuCgEiFRR6" target="_blank" rel="noopener">🗺️</a></li>
         </ul>
     </section>
 	
@@ -165,13 +201,20 @@
         </ul>
     </section>
 	
-    <section id="section9">
-        <h2>💃 Tips Sevillanos</h2>
-        <ul>
-            <li><span class="emoji">🕒</span> Las comidas y cenas empiezan tarde (14:00 y 21:00)</li>
-            <li><span class="emoji">🍴</span> Compartir "tapas" para probar más platos</li>
-        </ul>
-    </section>
+<section id="section9">
+    <h2>💃 Tips Sevillanos</h2>
+    <ul>
+        <li><span class="emoji">🕒</span> Las comidas y cenas empiezan tarde (14:00 y 21:00)</li>
+        <li><span class="emoji">🍴</span> Compartir "tapas" para probar más platos</li>
+        <li><span class="emoji">💡</span> No pidas "una tapa", pide “una cañita con algo pa’ picar”</li>
+        <li><span class="emoji">🧚</span> Abanico: accesorio imprescindible. Además de útil, te hace sentir muy sevillano/a</li>
+        <li><span class="emoji">🐢</span> Olvídate de las prisas. Aquí todo se hace “tranquilito”</li>
+        <li><span class="emoji">🎭</span> Saluda con arte: “¡Qué arte tienes!” se dice más que “hola”</li>
+        <li><span class="emoji">😴</span> Haz siesta si puedes. No es un mito, es supervivencia</li>
+        <li><span class="emoji">✅</span> Si alguien te dice "no ni ná", significa un sí rotundo</li>
+        <li><span class="emoji">💬</span> Aprende a decir “miarma” (es como ‘cariño’, pero con más salero)</li>
+    </ul>
+</section>
 	
 	<section id="section10">
 		<h2>🗺️ Fuera de Sevilla</h2>
@@ -192,10 +235,49 @@
 			</ul>
 	</section>
 	
+	<section id="section11">
+    <h2>📸 Nos vemos pronto</h2>
+	<div class="empty-space"></div> <!-- Línea vacía -->
+	<div id="countdown" style="font-size: 2.2em; font-style: italic; font-family: 'Garamond', 'Georgia', serif; color: fffad9; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);"></div>
+
+
+    <div style="text-align: center; margin-top: 1em;">
+        <img src="nosotros.jpg" alt="Nuestra foto" style="max-width: 100%; height: auto; border-radius: 1em; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </div>
+</section>
+
+	
     <footer style="text-align: center; margin-top: 40px; color: #c76b98;">
-        <p>¡Nos vemos bajo la luna de septiembre! 🌙<br>
-        - Acisco & Cristina -</p>
+        <p><br>
+        - Acisclo & Cristina -</p>
 		<br>
     </footer>
+	
+	
+<script>
+    const countdownElement = document.getElementById('countdown');
+    const weddingDate = new Date('2025-09-06T12:00:00');
+
+    function updateCountdown() {
+        const now = new Date();
+        const difference = weddingDate - now;
+
+        if (difference <= 0) {
+            countdownElement.textContent = '¡Corre a la boda, ya ha empezado!';
+            return;
+        }
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / (1000 * 60)) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+
+        countdownElement.textContent =
+            `${days} días, ${hours} h, ${minutes} min, ${seconds} s`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
 </body>
 </html>

@@ -35,25 +35,24 @@ header {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 6vw, 4.5rem); /* Responsive typography */
-    font-weight: 700; /* Stronger weight for emphasis */
-    letter-spacing: 1px; /* Adds modern spacing */
-    
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Subtle gradient effect */
-    
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
-    
+    font-family: 'Palatino Linotype', 'Palatino', 'Georgia', serif;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: fffad9; /* Texto blanco sólido */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Sombra suave para contraste */
+
     position: absolute;
     right: 5%;
     top: 50%;
     transform: translateY(-50%);
-    
+
     width: 70%;
-    text-align: right; /* Aligns text to the right */
+    text-align: right;
 }
+
+
 
 /* Hamburger Menu Styles */
 .hamburger {
@@ -199,4 +198,31 @@ a:focus::after {
 a:hover,
 a:focus {
   color: #FFF;
+}
+
+/* rsvp button */
+.rsvp-button {
+        display: inline-block;
+        background-color: #00788C;
+        color: white;
+        padding: 0.8em 1.5em;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 1em;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;
+ }
+ 
+ .rsvp-button:hover {
+    background-color: #1999A9; /* tono más claro que #00788C */
+}
+
+.rsvp-in-header {
+    position: fixed;
+    top: 8vh;        /* misma altura que la hamburguesa */
+    left: 2vh;      /* cerca del borde derecho */
+    z-index: 1000;   /* asegúrate de que esté por encima del contenido */
+    vertical-align: middle;
+}
 }
