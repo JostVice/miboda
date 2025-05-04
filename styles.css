@@ -271,3 +271,20 @@ a:focus {
     color: #fffad9 !important;
   }
 }
+
+body.invitation-page {
+  background-color: #eed9bb !important; /* or your preferred color */
+}
+.gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
